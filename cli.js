@@ -11,7 +11,7 @@ const run = async () => {
 		try {
 			console.log('Fetching', id);
 			const data = await fetch(id);
-			const safeTitle = data.title.replace(/["\\\/:*?<>|]/g, '');
+			const safeTitle = data.title.replace(/["/:*?<>|\\]/g, '');
 			fs.writeFileSync(path.join(dir, `${safeTitle}.m4a`), data.data, { encoding: 'binary' });
 			console.log(`Saved as ${safeTitle}.m4a!`);
 		} catch (err) {

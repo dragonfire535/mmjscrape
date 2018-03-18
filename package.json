@@ -1,0 +1,53 @@
+{
+	"name": "mmjscrape",
+	"version": "1.0.0",
+	"description": "A scraper for Music Maker JAM.",
+	"main": "index.js",
+	"scripts": {
+		"test": "npm run lint",
+		"lint": "eslint . --ext .js --ext .json"
+    },
+    "bin": {
+        "mmjscrape": "index.js",
+        "mmj": "index.js"
+    },
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/dragonfire535/mmjscrape.git"
+	},
+	"keywords": [
+        "mmj",
+        "music-maker-jam"
+	],
+	"author": "dragonfire535 <danielbodendahl@gmail.com>",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/dragonfire535/mmjscrape/issues"
+	},
+	"homepage": "https://github.com/dragonfire535/mmjscrape#readme",
+	"engines": {
+		"node": ">=8.0.0"
+	},
+	"dependencies": {
+		"snekfetch": "^3.6.4"
+	},
+	"devDependencies": {
+		"eslint": "^4.18.1",
+		"eslint-config-aqua": "^2.0.1",
+		"eslint-plugin-json": "^1.2.0"
+	},
+	"eslintConfig": {
+		"extends": "aqua",
+		"plugins": [
+			"json"
+		],
+		"rules": {
+			"camelcase": "off",
+			"id-length": "off",
+			"no-await-in-loop": "off",
+			"no-console": "off",
+			"no-process-env": "off",
+			"prefer-const": "error"
+		}
+	}
+}

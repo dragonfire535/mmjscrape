@@ -1,0 +1,8 @@
+node_modules/
+package-lock.json
+logs/
+*.log
+.gitignore
+.gitattributes
+.travis.yml
+*.m4a

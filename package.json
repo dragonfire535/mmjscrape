@@ -1,6 +1,6 @@
 {
 	"name": "mmjscrape",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "A scraper for Music Maker JAM.",
 	"main": "index.js",
 	"scripts": {
@@ -8,8 +8,8 @@
 		"lint": "eslint . --ext .js --ext .json"
 	},
 	"bin": {
-		"mmjscrape": "index.js",
-		"mmj": "index.js"
+		"mmjscrape": "cli.js",
+		"mmj": "cli.js"
 	},
 	"repository": {
 		"type": "git",

@@ -6,18 +6,18 @@
 	"scripts": {
 		"test": "npm run lint",
 		"lint": "eslint . --ext .js --ext .json"
-    },
-    "bin": {
-        "mmjscrape": "index.js",
-        "mmj": "index.js"
-    },
+	},
+	"bin": {
+		"mmjscrape": "index.js",
+		"mmj": "index.js"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/dragonfire535/mmjscrape.git"
 	},
 	"keywords": [
-        "mmj",
-        "music-maker-jam"
+		"mmj",
+		"music-maker-jam"
 	],
 	"author": "dragonfire535 <danielbodendahl@gmail.com>",
 	"license": "ISC",

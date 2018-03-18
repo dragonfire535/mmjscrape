@@ -8,7 +8,7 @@ module.exports = async id => {
 	return {
 		hash: id,
 		url,
-		title: title.replace(/^(Music Maker JAM - )/i),
+		title: title.replace(/^(Music Maker JAM - )/i, ''),
 		data: body
 	};
 };

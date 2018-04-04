@@ -1,6 +1,6 @@
 {
 	"name": "mmjscrape",
-	"version": "2.0.5",
+	"version": "2.0.6",
 	"description": "A scraper for Music Maker JAM.",
 	"main": "index.js",
 	"scripts": {
@@ -33,7 +33,7 @@
 	},
 	"devDependencies": {
 		"eslint": "^4.19.0",
-		"eslint-config-amber": "^3.0.0",
+		"eslint-config-amber": "^1.0.0",
 		"eslint-plugin-json": "^1.2.0"
 	},
 	"eslintConfig": {

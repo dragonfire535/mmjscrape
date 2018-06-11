@@ -1,11 +1,10 @@
-const snekfetch = require('snekfetch');
+const request = require('node-superfetch');
 
 module.exports = async id => {
-	const { raw } = await snekfetch.get(`https://www.jam-community.com/song/${id}`);
-	const text = raw.toString();
+	const { text } = await request.get(`https://www.jam-community.com/song/${id}`);
 	const [url] = text.match(/https:\/\/mmj-live\.s3-accelerate\.amazonaws\.com\/assets\/music_file\/(.+)\.m4a/);
 	const [, title] = text.match(/<title>(.+)<\/title>/);
-	const { body } = await snekfetch.get(url);
+	const { body } = await request.get(url);
 	return {
 		hash: id,
 		url,
